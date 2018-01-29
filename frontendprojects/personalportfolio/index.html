@@ -1,0 +1,133 @@
+<head>
+        <title>Tribute</title>    
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./index.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+</head>
+
+<script>
+        $(document).ready(function(){
+          // Add scrollspy to <body>
+          $('nav').scrollspy({target: ".navbar", offset: 50});   
+        
+          // Add smooth scrolling on all links inside the navbar
+          $(".navbar a").on('click', function(event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+        
+              // Store hash
+              var hash = this.hash;
+        
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 300, function(){
+           
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            }  // End if
+          });
+        });
+</script>
+        
+<nav class="navbar navbar-fixed-top">
+    <ul>
+            <li style="float:left;"><a href="#">My Portfolio</a></li>
+           
+            
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+    </ul>
+</nav>
+<div>
+<div class="row">
+    <div class="col-xs-2">
+
+    </div>
+    <div class="col-xs-8 content-pane">
+        <div class="row content-pane--head" id="about">
+            <div class="col-xs-8 text-center">
+                    <h3>Front-End Developer and UX/UI designer, with practical experience in project management, branding strategy, and creative direction; devoted to functional programming and information architecture.</h3>            
+                    <hr>
+                    <h3>Web and Android Developer | Blockchain Enthusiast</h3>
+            </div>
+            <div class="col-xs-4">
+                    <img class="img-responsive image-circle" src="https://cdn-images-1.medium.com/max/1200/0*6dNEA7cqCKPAEpGX.jpg" alt="Display Picture">                
+            </div>
+        </div>
+
+        <div class="row content-pane--portfolio text-center" id="portfolio">
+            <h2>PORTFOLIO</h2>
+            <hr>
+            <div class="col-xs-6">
+                    <img class="img-responsive" src="./assets/Screenshot (102).png">
+                    <img class="img-responsive" src="./assets/Screenshot (116).png">
+                    <img class="img-responsive" src="./assets/Screenshot (118).png">
+            </div>
+            <div class="col-xs-6">
+                    <img class="img-responsive" src="./assets/Screenshot (122).png">
+                    <img class="img-responsive" src="./assets/Screenshot (123).png">
+                    <img class="img-responsive" src="./assets/Screenshot (150).png">
+                    
+            </div>
+        </div>
+        <hr>
+        <div class="row content-pane--form" id="contact">
+                <h2 class="text-center">CONTACT ME</h2>
+                <hr>
+                <div class="col-xs-6">
+                    <form action="#">
+                        <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                                <label for="exampleInputPassword1">Name</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Name">
+                        </div>
+                            
+                        <div class="form-group">
+                                <label for="comment">Message:</label>
+                                <textarea class="form-control" rows="5" id="comment"></textarea>
+                        </div>
+                        <button class="btn btn-primary" type="button">Send</button> 
+                    </form>
+                </div>
+                <div class="col-xs-6">
+                        <h4>Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my resume, tips on how to solve your sudoku, random questions about the universe and the meaning of life, or even if only for some nice Fika here in stunning Toronto... just feel free to drop me a line anytime.
+                                
+                               <br><br> I promise to reply A.S.A.P.</h4>
+                </div>
+        </div>
+    </div>
+    <div class="col-xs-2">
+                        
+    </div>
+
+</div>
+
+<div class="row about-page">
+    <div class="col-xs-6 text-center">
+        <h2>About This Page</h2>
+        <h3>Made with <i class="fa fa-heart"></i><br> by Dhruvam</h3>
+    </div>
+    <div class="col-xs-6 text-center">
+        <h2>Around the Web</h2>
+        <a href="https://www.facebook.com/ITasteALiquorNeverBrewed"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/Dhruvam_Digest"><i class="fa fa-twitter"></i></a>
+        <a href="https://plus.google.com/u/0/106858482400962410357"><i class="fa fa-google"></i></a>
+    </div>
+
+</div>
+</div>
+<div class="footer">
+    <p class="text-center">Made in 2018. All rights Reserved</p>
+</div>

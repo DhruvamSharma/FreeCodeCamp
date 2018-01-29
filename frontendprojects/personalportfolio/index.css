@@ -1,0 +1,119 @@
+body {
+    background-color: grey;
+    margin: 0;
+    font-family: -apple-system,
+   
+    BlinkMacSystemFont,
+    
+    "Segoe UI",
+    
+    "Roboto",
+   
+    "Helvetica Neue", Arial, sans-serif,
+    
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.navbar {
+    background-color: purple;
+    margin: 0;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    list-style-type: none;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
+.content-pane {
+    background-color: darkgray;
+    color: white;
+    margin: 0;
+}
+
+.image-circle {
+    border-radius: 50%;
+    
+}
+
+.content-pane--head {
+    margin: 5%;
+    margin-top: 10%;
+}
+
+.content-pane--portfolio {
+    background-color: white;
+    color: grey;
+}
+
+.content-pane--portfolio > h2 {
+    font-weight: bolder;
+}
+
+.content-pane--portfolio > div > img {
+    margin: 3%;
+}
+
+.content-pane--form > h2 {
+    font-weight: bolder;
+}
+
+.content-pane--form {
+    background-color: white;
+    color: darkgrey;
+}
+
+.about-page {
+    color: white;
+    background-color: darkgray;
+}
+
+.about-page > div > a > i {
+    margin: 3%;
+    
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 5px;
+    transform: scale(2);
+    
+}
+
+.about-page > div > a > i:hover {
+    /*background-color: purple;*/
+    background-color: white;
+    
+}
+
+.footer {
+    background-color: purple;
+    width: 100%;
+    padding: 1.25%;
+    color: white;
+}
+
+
